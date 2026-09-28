@@ -43,7 +43,8 @@ function hidePreloader() {
   const el = document.getElementById('preloader');
   if (!el || preloaderStarted) return;
   preloaderStarted = true;
-  const minShown = new Promise(resolve => setTimeout(resolve, 400));
+  // Long enough for the line animation to build up instead of flashing by.
+  const minShown = new Promise(resolve => setTimeout(resolve, 1200));
   // Never keep a slow connection stuck behind the loader.
   const maxWait = new Promise(resolve => setTimeout(resolve, 6000));
   void document.body.offsetHeight; // force layout so the page's fonts start loading before fonts.ready is read
