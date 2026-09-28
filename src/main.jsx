@@ -6,6 +6,7 @@ import Pricing from './Pricing';
 import Legal from './Legal';
 import { LanguageProvider, useT } from './i18n';
 import { CookieBanner } from './i18n/CookieBanner';
+import '@fontsource/marck-script/400.css';
 import './styles.css';
 import './pricing.css';
 
