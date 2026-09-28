@@ -3,6 +3,7 @@ import { Link, NavLink, useParams } from 'react-router-dom';
 import { telegram, whatsapp, email } from './contacts';
 import { useT, useLanguage, usePricingData } from './i18n';
 import { Nl, LanguageSwitcher } from './i18n/Nl';
+import PresentationMenu from './PresentationMenu';
 
 function CheckList({ items }) { return <ul className="price-checklist">{items.map(text => <li key={text}><span aria-hidden="true">✓</span>{text}</li>)}</ul>; }
 
@@ -44,7 +45,7 @@ export default function Pricing() {
       <section className="pricing-hero">
         <nav className="breadcrumbs" aria-label={p.breadcrumbsAria}><Link to="/">{p.home}</Link><span>/</span>{selected ? <><Link to="/pricing">{p.allServices}</Link><span>/</span><span aria-current="page">{selected.title}</span></> : <span aria-current="page">{p.allServices}</span>}</nav>
         <div className="pricing-heading"><div><p className="eyebrow">{p.eyebrow}</p><h1>{p.heading}<br /><span>{p.headingAccent}</span></h1></div><img className="pricing-star" src="/assets/logo-mark.png" width="210" height="113" alt="" aria-hidden="true" /></div>
-        <div className="pricing-lead"><p><Nl text={p.lead} /></p><a href="/assets/afonin-presentation.pdf" download="Afonin-Web-Studio-Presentation.pdf">{p.downloadPresentation} <span>↓</span></a></div>
+        <div className="pricing-lead"><p><Nl text={p.lead} /></p><PresentationMenu className="pricing-download" triggerClassName="pricing-download-trigger" ariaLabel={p.downloadPresentation}>{p.downloadPresentation} <span>↓</span></PresentationMenu></div>
         <div className="price-promises">{p.promises.map(text => <span key={text}>{text}</span>)}</div>
       </section>
       <nav className="price-navigation" aria-label={p.navAria}><NavLink end to="/pricing">{p.allServicesNav} <span>{p.totalCount}</span></NavLink>{categories.map(item => <NavLink key={item.id} to={'/pricing/' + item.id}>{item.title}</NavLink>)}</nav>

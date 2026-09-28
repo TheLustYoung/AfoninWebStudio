@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { whatsapp, email } from './contacts';
 import { useT, useLanguage } from './i18n';
 import { Nl, LanguageSwitcher } from './i18n/Nl';
+import PresentationMenu from './PresentationMenu';
 
 export default function Home() {
   const t = useT();
@@ -56,7 +57,7 @@ export default function Home() {
 <footer className="contact" id="contact">
   <div className="contact-intro"><h2><Nl text={h.contactTitle} /> <img className="brand-mark" src="/assets/logo-mark.png" width="46" height="25" alt="" aria-hidden="true" /></h2><p>{h.contactLead}</p><a className="contact-cta" href="https://t.me/AfoninWebStudio" target="_blank" rel="noopener"><span>↗</span> {h.contactCta}</a></div>
   <address className="contact-links"><a href={email} aria-label={h.emailAria}><span className="contact-icon">✉</span><span><small>{h.emailSmall}</small>afoninwebstudio@gmail.com</span></a><a href={whatsapp} target="_blank" rel="noopener noreferrer" aria-label={h.whatsappAria}><span className="contact-icon">☎</span><span><small>{h.whatsappSmall}</small>+374 98 96 94 53</span></a><a href="https://t.me/AfoninWebStudio" target="_blank" rel="noopener"><span className="contact-icon">↗</span><span>@AfoninWebStudio</span></a><a href="tel:+37498969453"><span className="contact-icon">☎</span><span>{h.callText}</span></a><p><span className="contact-icon">⌖</span><span>{h.cityLine}</span></p></address>
-  <a className="presentation-preview" href="/assets/afonin-presentation.pdf" download="Afonin-Web-Studio-Presentation.pdf" aria-label={h.presentationAria}><img src="/assets/presentation.webp" width="1440" height="810" alt={h.presentationAlt} loading="lazy" /><span>{h.presentationText} <span>↓</span></span></a>
+  <PresentationMenu className="presentation-preview" triggerClassName="presentation-trigger" ariaLabel={h.presentationAria}><img src="/assets/presentation.webp" width="1440" height="810" alt={h.presentationAlt} loading="lazy" /><span>{h.presentationText} <span>↓</span></span></PresentationMenu>
   <div className="footer-line"><span>{t.common.copyright}</span><Link to="/privacy">{t.common.privacyLink}</Link><Link to="/offer">{t.common.offerLink}</Link><a href="https://github.com/TheLustYoung" target="_blank" rel="noopener">{t.common.github}</a><a href="#home">{t.common.up}</a></div>
 </footer>
 </main>
