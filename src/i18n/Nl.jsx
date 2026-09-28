@@ -5,6 +5,7 @@ export function Nl({ text }) {
   return lines.map((line, i) => (
     <React.Fragment key={i}>
       {i > 0 && <br />}
+      {i > 0 && ' '}
       {line}
     </React.Fragment>
   ));
