@@ -1,0 +1,451 @@
+export const content = {
+  ru: {
+    meta: {
+      homeTitle: 'Владислав Афонин — Afonin Web Studio',
+      siteName: 'Afonin Web Studio',
+      pricingAllTitle: 'Услуги и цены',
+      pricingSuffix: ' — цены'
+    },
+    common: {
+      skipServices: 'Перейти к услугам',
+      skipPricing: 'Перейти к ценам',
+      brandAria: 'Afonin Web Studio — главная',
+      backToHome: '← На главную',
+      up: 'НАВЕРХ ↑',
+      github: 'GITHUB ↗',
+      copyright: '© 2026 AFONIN WEB STUDIO',
+      notFoundEyebrow: 'AFONIN WEB STUDIO · 404',
+      privacyLink: 'Политика конфиденциальности',
+      offerLink: 'Публичная оферта',
+      cookieText: 'Сайт использует файлы cookie для аналитики и улучшения работы. Продолжая пользоваться сайтом, вы соглашаетесь с этим.',
+      cookieAccept: 'Хорошо'
+    },
+    home: {
+      availability: 'ОТКРЫТ К НОВЫМ ПРОЕКТАМ',
+      portraitAlt: 'Владислав Афонин, основатель Afonin Web Studio',
+      greeting: 'Привет, я',
+      name: 'ВЛАДИСЛАВ\nАФОНИН',
+      role: 'ВЕБ-РАЗРАБОТЧИК\nИ ОСНОВАТЕЛЬ СТУДИИ',
+      intro: 'Проектирую, рисую и программирую цифровые решения для бизнеса. От первой идеи до запуска — вы общаетесь напрямую со мной.',
+      location: 'АРМЕНИЯ · РАБОТАЮ ОНЛАЙН',
+      heroNote: 'Превращаю идеи\nв работающие\nцифровые решения.',
+      stats: [
+        { value: '5', unit: 'лет', label: 'В FULL-STACK\nРАЗРАБОТКЕ' },
+        { value: '1,5', unit: 'года', label: 'РАЗРАБОТКИ\nС AI' },
+        { value: '12', unit: 'мес.', label: 'ГАРАНТИИ\nНА КОД' }
+      ],
+      servicesTitle: 'ЦИФРОВЫЕ РЕШЕНИЯ',
+      fullPricing: 'ПОЛНЫЙ ПРАЙС',
+      services: [
+        { alt: 'Сайты под ключ: лендинг, сайт компании, интернет-магазин', title: 'САЙТЫ ПОД КЛЮЧ', small: 'ЛЕНДИНГИ · КОМПАНИИ · МАГАЗИНЫ' },
+        { alt: 'Боты, AI и автоматизация для бизнеса', title: 'БОТЫ И AI', small: 'TELEGRAM · АССИСТЕНТЫ · ИНТЕГРАЦИИ' },
+        { alt: 'Веб-приложения: CRM, личные кабинеты, B2B-порталы', title: 'ВЕБ-ПРИЛОЖЕНИЯ', small: 'CRM · ЛИЧНЫЕ КАБИНЕТЫ · B2B' }
+      ],
+      aboutAria: 'О студии и процессе работы',
+      experienceTitle: 'ОПЫТ И ТЕХНОЛОГИИ',
+      aboutStudio: 'О СТУДИИ',
+      experienceRows: [
+        { title: 'Full-stack разработка', desc: 'От интерфейса до базы данных', badge: '5 ЛЕТ' },
+        { title: 'Разработка с AI', desc: 'Больше времени на качество и тесты', badge: '1,5 ГОДА' },
+        { title: 'Системное администрирование', desc: 'Надёжная основа каждого проекта', badge: '2 ГОДА' }
+      ],
+      skillsTitle: 'ТЕХНОЛОГИИ И ПОДХОД',
+      skills: ['NEXT.JS', 'REACT', 'NODE.JS', 'БАЗЫ ДАННЫХ', 'API', 'TELEGRAM', 'AI', 'SEO', 'АДАПТИВ', 'HY · RU · EN'],
+      processTitle: 'КАК МЫ РАБОТАЕМ',
+      steps: [
+        { title: 'ЗНАКОМИМСЯ', desc: 'Бесплатная консультация.\nОбсуждаем цели и задачу.' },
+        { title: 'ПЛАНИРУЕМ', desc: 'Бриф, структура, сроки и смета.\nФиксируем объём работы.' },
+        { title: 'ПРОЕКТИРУЕМ', desc: 'Макет первого экрана бесплатно.\nДоговор и 50% предоплаты.' },
+        { title: 'РАЗРАБАТЫВАЕМ', desc: 'Чистый код, адаптив и интеграции.\nРезультат каждые 3–5 дней.' },
+        { title: 'ЗАПУСКАЕМ', desc: 'Тесты, обучение и передача доступов.\n12 месяцев гарантии на код.' }
+      ],
+      manifestoQuote: 'Вы общаетесь\nнапрямую\nс разработчиком.\nОт идеи\nдо запуска.',
+      signature: 'Владислав',
+      manifestoBottom: 'ВАША ИДЕЯ.\nМОЯ РАБОТА.\nОБЩИЙ РЕЗУЛЬТАТ.',
+      contactTitle: 'ОБСУДИМ\nВАШ ПРОЕКТ?',
+      contactLead: 'Бесплатная консультация и макет главного экрана — до любой оплаты.',
+      contactCta: 'НАПИСАТЬ В TELEGRAM',
+      emailAria: 'Написать на почту afoninwebstudio@gmail.com',
+      emailSmall: 'НАПИСАТЬ НА ПОЧТУ',
+      whatsappAria: 'Написать в WhatsApp на номер +374 98 96 94 53',
+      whatsappSmall: 'НАПИСАТЬ В WHATSAPP',
+      callText: 'Позвонить: +374 98 96 94 53',
+      cityLine: 'Гюмри · Ереван · онлайн',
+      presentationAria: 'Скачать презентацию услуг Afonin Web Studio в PDF',
+      presentationAlt: 'Презентация Afonin Web Studio — цифровые решения для бизнеса',
+      presentationText: 'СКАЧАТЬ ПРЕЗЕНТАЦИЮ · PDF'
+    },
+    notFound: {
+      title: 'Страница не найдена',
+      link: 'Перейти к услугам и ценам →',
+      home: 'На главную'
+    },
+    pricing: {
+      notFoundTitle: 'Раздел не найден',
+      notFoundLink: 'Все услуги и цены →',
+      breadcrumbsAria: 'Хлебные крошки',
+      home: 'Главная',
+      allServices: 'Услуги и цены',
+      eyebrow: 'AFONIN WEB STUDIO · ПРАЙС 2026',
+      heading: 'ЦИФРОВЫЕ РЕШЕНИЯ.',
+      headingAccent: 'ПРОЗРАЧНЫЕ ЦЕНЫ.',
+      lead: 'От первого экрана до собственного веб-приложения.\nВыберите решение — состав работ, сроки и стоимость уже здесь.',
+      downloadPresentation: 'Скачать презентацию',
+      promises: ['Макет до оплаты', 'Цена фиксируется в договоре', '12 месяцев гарантии', 'Все цены в AMD · ֏'],
+      navAria: 'Разделы прайса',
+      allServicesNav: 'Все услуги',
+      totalCount: '13',
+      supportLabel: 'Ежемесячная поддержка',
+      perMonth: ' /мес',
+      supportCta: 'Обсудить сопровождение',
+      supportNote: 'Минимальный срок — 3 месяца. Неиспользованные часы правок не переносятся.',
+      includesTitle: 'Входит в стоимость',
+      extrasTitle: 'Можно добавить',
+      needsTitle: 'Что потребуется от вас',
+      discussProject: 'Обсудить проект',
+      termsEyebrow: 'ПРОЗРАЧНО И ПО ДОГОВОРУ',
+      termsTitle: 'Условия и гарантии',
+      terms: [
+        { title: 'Оплата', text: '50% предоплата, 50% после запуска. Проекты от 500 000 ֏ — в три этапа: 40 / 30 / 30. Безналичный расчёт на счёт ИП.' },
+        { title: 'Гарантия', text: '12 месяцев бесплатно исправляем ошибки в нашем коде, если в него не вносили изменения третьи лица.' },
+        { title: 'От вас нужно', text: 'Тексты и фото (или заказ у нас), доступы к домену и соцсетям, один ответственный за согласование.' },
+        { title: 'Не входит в цену', text: 'Домен и хостинг, платные сервисы, фото- и видеосъёмка, рекламный бюджет, правки сверх включённых.' }
+      ],
+      termsNote: 'Итоговая стоимость и сроки фиксируются в договоре после бесплатной консультации.',
+      contactEyebrow: 'СЛЕДУЮЩИЙ ШАГ',
+      contactTitle: 'Обсудим ваш проект?',
+      contactLead: 'Бесплатная консультация и макет главного экрана — до любой оплаты.',
+      contactBonus: 'Бонус первым клиентам: +1 месяц сопровождения в подарок.',
+      writeTelegram: 'Написать в Telegram',
+      writeWhatsapp: 'Написать в WhatsApp',
+      writeEmail: 'Написать на почту',
+      backToStudio: '← Вернуться к студии',
+      upPrices: 'К ценам ↑'
+    },
+    legal: {
+      updated: 'Обновлено: 1 января 2026',
+      privacyTitle: 'Политика конфиденциальности',
+      offerTitle: 'Публичная оферта',
+      privacy: [
+        { h: 'Кто обрабатывает данные', p: 'Оператором сайта afonin-webstudio (далее — «Сайт») выступает Владислав Афонин, индивидуальный предприниматель (Республика Армения). Контакты для связи по вопросам конфиденциальности: afoninwebstudio@gmail.com.' },
+        { h: 'Какие данные собираются', p: 'Сайт не содержит форм, которые автоматически отправляют данные на сервер. Связь происходит через внешние сервисы — Telegram, WhatsApp, телефон или email — по вашей инициативе, когда вы переходите по соответствующей ссылке. Мы получаем только то, что вы сами сообщаете в переписке: имя, контакт, описание проекта.' },
+        { h: 'Файлы cookie и аналитика', p: 'Сайт может использовать сервисы веб-аналитики (например, Google Analytics или «Яндекс Метрика») для сбора обезличенной статистики посещений — тип устройства, браузер, источник перехода. Эти данные не позволяют напрямую установить личность посетителя. Вы можете запретить cookie в настройках браузера — это не повлияет на работу сайта.' },
+        { h: 'Как используются данные', p: 'Данные из переписки используются исключительно для обсуждения и выполнения вашего проекта. Мы не продаём и не передаём их третьим лицам, за исключением случаев, прямо предусмотренных законодательством.' },
+        { h: 'Хранение и защита', p: 'Переписка хранится в соответствующих мессенджерах и почтовых сервисах (Telegram, WhatsApp, Gmail) и защищена их собственными средствами безопасности. Доступ к переписке имеет только Владислав Афонин.' },
+        { h: 'Ваши права', p: 'Вы можете в любой момент запросить удаление своих данных из переписки, написав на afoninwebstudio@gmail.com.' },
+        { h: 'Изменения политики', p: 'Актуальная версия политики всегда доступна на этой странице. Дата последнего обновления указана в начале документа.' }
+      ],
+      offer: [
+        { h: 'Общие положения', p: 'Настоящий документ является публичной офертой Владислава Афонина (далее — «Исполнитель») на оказание услуг по разработке сайтов, ботов, AI-решений и веб-приложений. Оплата услуг означает согласие заказчика с условиями данной оферты.' },
+        { h: 'Предмет договора', p: 'Исполнитель оказывает услуги в объёме, согласованном сторонами в переписке и/или зафиксированном в договоре, на основе тарифов из раздела «Услуги и цены».' },
+        { h: 'Стоимость и оплата', p: 'Стандартные условия — 50% предоплата, 50% после запуска проекта. Для проектов от 500 000 ֏ оплата может быть разбита на три этапа: 40% / 30% / 30%. Оплата производится безналичным переводом. Итоговая стоимость фиксируется индивидуально после бесплатной консультации.' },
+        { h: 'Сроки выполнения', p: 'Ориентировочные сроки указаны в разделе цен и зависят от объёма работ. Сроки могут корректироваться, если заказчик задерживает предоставление материалов (тексты, фото, доступы) или согласование этапов.' },
+        { h: 'Гарантия', p: 'Исполнитель бесплатно исправляет ошибки в собственном коде в течение 12 месяцев после запуска проекта, при условии что в код не вносились изменения третьими лицами.' },
+        { h: 'Обязанности заказчика', p: 'Заказчик предоставляет необходимые материалы и доступы, назначает одного ответственного за согласование и своевременно даёт обратную связь по этапам работы.' },
+        { h: 'Что не входит в стоимость', p: 'Домен и хостинг, платные сторонние сервисы и интеграции, фото- и видеосъёмка, рекламный бюджет, а также доработки сверх согласованного объёма — оплачиваются отдельно.' },
+        { h: 'Отказ от услуг', p: 'При отказе заказчика от проекта после начала работ предоплата за уже выполненный объём работ не возвращается. Возврат за невыполненный объём обсуждается индивидуально.' },
+        { h: 'Заключительные положения', p: 'Все спорные вопросы решаются путём переговоров. Фактическая оплата услуг и начало работ означают согласие заказчика с условиями настоящей оферты.' }
+      ]
+    }
+  },
+
+  en: {
+    meta: {
+      homeTitle: 'Vladislav Afonin — Afonin Web Studio',
+      siteName: 'Afonin Web Studio',
+      pricingAllTitle: 'Services & Pricing',
+      pricingSuffix: ' — pricing'
+    },
+    common: {
+      skipServices: 'Skip to services',
+      skipPricing: 'Skip to pricing',
+      brandAria: 'Afonin Web Studio — home',
+      backToHome: '← Back to home',
+      up: 'BACK TO TOP ↑',
+      github: 'GITHUB ↗',
+      copyright: '© 2026 AFONIN WEB STUDIO',
+      notFoundEyebrow: 'AFONIN WEB STUDIO · 404',
+      privacyLink: 'Privacy Policy',
+      offerLink: 'Public Offer',
+      cookieText: 'This site uses cookies for analytics and to improve your experience. By continuing to use the site, you agree to this.',
+      cookieAccept: 'Got it'
+    },
+    home: {
+      availability: 'OPEN FOR NEW PROJECTS',
+      portraitAlt: 'Vladislav Afonin, founder of Afonin Web Studio',
+      greeting: "Hi, I'm",
+      name: 'VLADISLAV\nAFONIN',
+      role: 'WEB DEVELOPER\n& STUDIO FOUNDER',
+      intro: 'I design, draw and build digital products for business. From the first idea to launch — you talk directly to me.',
+      location: 'ARMENIA · WORKING ONLINE',
+      heroNote: 'Turning ideas\ninto working\ndigital products.',
+      stats: [
+        { value: '5', unit: 'years', label: 'IN FULL-STACK\nDEVELOPMENT' },
+        { value: '1.5', unit: 'years', label: 'BUILDING\nWITH AI' },
+        { value: '12', unit: 'mo.', label: 'CODE\nWARRANTY' }
+      ],
+      servicesTitle: 'DIGITAL SOLUTIONS',
+      fullPricing: 'FULL PRICE LIST',
+      services: [
+        { alt: 'Turnkey websites: landing page, company site, online store', title: 'TURNKEY WEBSITES', small: 'LANDING PAGES · COMPANIES · STORES' },
+        { alt: 'Bots, AI and automation for business', title: 'BOTS & AI', small: 'TELEGRAM · ASSISTANTS · INTEGRATIONS' },
+        { alt: 'Web applications: CRM, client portals, B2B platforms', title: 'WEB APPLICATIONS', small: 'CRM · CLIENT PORTALS · B2B' }
+      ],
+      aboutAria: 'About the studio and workflow',
+      experienceTitle: 'EXPERIENCE & TECH',
+      aboutStudio: 'ABOUT THE STUDIO',
+      experienceRows: [
+        { title: 'Full-stack development', desc: 'From interface to database', badge: '5 YEARS' },
+        { title: 'Development with AI', desc: 'More time for quality and testing', badge: '1.5 YEARS' },
+        { title: 'System administration', desc: 'A reliable foundation for every project', badge: '2 YEARS' }
+      ],
+      skillsTitle: 'TECH & APPROACH',
+      skills: ['NEXT.JS', 'REACT', 'NODE.JS', 'DATABASES', 'API', 'TELEGRAM', 'AI', 'SEO', 'RESPONSIVE', 'HY · RU · EN'],
+      processTitle: 'HOW WE WORK',
+      steps: [
+        { title: 'DISCOVERY', desc: 'A free consultation.\nWe discuss your goals and task.' },
+        { title: 'PLANNING', desc: 'Brief, structure, timeline and quote.\nWe lock the scope of work.' },
+        { title: 'DESIGN', desc: 'Free mockup of the first screen.\nContract and 50% upfront.' },
+        { title: 'DEVELOPMENT', desc: 'Clean code, responsive layout, integrations.\nProgress every 3–5 days.' },
+        { title: 'LAUNCH', desc: 'Testing, training and access handover.\n12 months of code warranty.' }
+      ],
+      manifestoQuote: 'You talk\ndirectly\nwith the developer.\nFrom idea\nto launch.',
+      signature: 'Vladislav',
+      manifestoBottom: 'YOUR IDEA.\nMY WORK.\nSHARED RESULT.',
+      contactTitle: "LET'S DISCUSS\nYOUR PROJECT?",
+      contactLead: 'A free consultation and a homepage mockup — before any payment.',
+      contactCta: 'MESSAGE ON TELEGRAM',
+      emailAria: 'Email afoninwebstudio@gmail.com',
+      emailSmall: 'SEND AN EMAIL',
+      whatsappAria: 'Message on WhatsApp at +374 98 96 94 53',
+      whatsappSmall: 'MESSAGE ON WHATSAPP',
+      callText: 'Call: +374 98 96 94 53',
+      cityLine: 'Gyumri · Yerevan · online',
+      presentationAria: 'Download the Afonin Web Studio services presentation as PDF',
+      presentationAlt: 'Afonin Web Studio presentation — digital solutions for business',
+      presentationText: 'DOWNLOAD PRESENTATION · PDF'
+    },
+    notFound: {
+      title: 'Page not found',
+      link: 'Go to services and pricing →',
+      home: 'Back to home'
+    },
+    pricing: {
+      notFoundTitle: 'Section not found',
+      notFoundLink: 'All services and pricing →',
+      breadcrumbsAria: 'Breadcrumbs',
+      home: 'Home',
+      allServices: 'Services & Pricing',
+      eyebrow: 'AFONIN WEB STUDIO · PRICE LIST 2026',
+      heading: 'DIGITAL SOLUTIONS.',
+      headingAccent: 'TRANSPARENT PRICING.',
+      lead: 'From the first screen to your own web application.\nPick a solution — scope, timeline and price are right here.',
+      downloadPresentation: 'Download presentation',
+      promises: ['Mockup before payment', 'Price fixed in the contract', '12 months of warranty', 'All prices in AMD · ֏'],
+      navAria: 'Price list sections',
+      allServicesNav: 'All services',
+      totalCount: '13',
+      supportLabel: 'Monthly support',
+      perMonth: ' /mo',
+      supportCta: 'Discuss support plan',
+      supportNote: 'Minimum term — 3 months. Unused revision hours do not roll over.',
+      includesTitle: 'Included in the price',
+      extrasTitle: 'Can be added',
+      needsTitle: 'What we need from you',
+      discussProject: 'Discuss the project',
+      termsEyebrow: 'TRANSPARENT & CONTRACT-BASED',
+      termsTitle: 'Terms and guarantees',
+      terms: [
+        { title: 'Payment', text: '50% upfront, 50% after launch. Projects from 500,000 ֏ are split into three stages: 40 / 30 / 30. Bank transfer to a registered business account.' },
+        { title: 'Warranty', text: 'We fix bugs in our own code free of charge for 12 months, as long as no third party has modified it.' },
+        { title: "What we need from you", text: 'Copy and photos (or we can produce them), access to your domain and socials, and one point of contact for approvals.' },
+        { title: 'Not included in the price', text: 'Domain and hosting, paid third-party services, photo/video production, ad budget, and revisions beyond what is included.' }
+      ],
+      termsNote: 'Final cost and timeline are fixed in the contract after a free consultation.',
+      contactEyebrow: 'NEXT STEP',
+      contactTitle: "Let's discuss your project?",
+      contactLead: 'A free consultation and a homepage mockup — before any payment.',
+      contactBonus: 'Bonus for first clients: +1 month of support as a gift.',
+      writeTelegram: 'Message on Telegram',
+      writeWhatsapp: 'Message on WhatsApp',
+      writeEmail: 'Send an email',
+      backToStudio: '← Back to the studio',
+      upPrices: 'Back to top ↑'
+    },
+    legal: {
+      updated: 'Last updated: January 1, 2026',
+      privacyTitle: 'Privacy Policy',
+      offerTitle: 'Public Offer',
+      privacy: [
+        { h: 'Who processes your data', p: 'The operator of this site is Vladislav Afonin, a sole proprietor (Republic of Armenia). Contact for privacy questions: afoninwebstudio@gmail.com.' },
+        { h: 'What data is collected', p: "The site has no forms that automatically send data to a server. Contact happens through external services — Telegram, WhatsApp, phone or email — at your own initiative, when you follow the relevant link. We only receive what you share yourself in the conversation: your name, contact details, and project description." },
+        { h: 'Cookies and analytics', p: 'The site may use web analytics services (such as Google Analytics or Yandex Metrica) to collect anonymized visit statistics — device type, browser, referral source. This data does not directly identify a visitor. You can block cookies in your browser settings without affecting how the site works.' },
+        { h: 'How data is used', p: 'Data from correspondence is used solely to discuss and deliver your project. We do not sell or share it with third parties, except where required by law.' },
+        { h: 'Storage and protection', p: 'Correspondence is stored within the relevant messengers and email services (Telegram, WhatsApp, Gmail) and protected by their own security measures. Only Vladislav Afonin has access to it.' },
+        { h: 'Your rights', p: 'You may request deletion of your data from our correspondence at any time by writing to afoninwebstudio@gmail.com.' },
+        { h: 'Changes to this policy', p: 'The current version of this policy is always available on this page. The last update date is shown at the top of the document.' }
+      ],
+      offer: [
+        { h: 'General provisions', p: 'This document is a public offer by Vladislav Afonin (the "Contractor") to provide website, bot, AI and web-application development services. Payment for services constitutes the client\'s agreement to these terms.' },
+        { h: 'Scope of work', p: 'The Contractor provides services in the scope agreed with the client in correspondence and/or a contract, based on the rates listed in the "Services & Pricing" section.' },
+        { h: 'Price and payment', p: 'Standard terms: 50% upfront, 50% after launch. Projects from 500,000 ֏ may be split into three stages: 40% / 30% / 30%. Payment is made by bank transfer. The final price is set individually after a free consultation.' },
+        { h: 'Timeline', p: 'Estimated timelines are listed in the pricing section and depend on project scope. Timelines may shift if the client delays providing materials (copy, photos, access) or approving stages of work.' },
+        { h: 'Warranty', p: "The Contractor fixes bugs in its own code free of charge for 12 months after launch, provided no third party has modified the code." },
+        { h: 'Client responsibilities', p: 'The client provides the necessary materials and access, designates one point of contact for approvals, and gives timely feedback on project stages.' },
+        { h: 'Not included in the price', p: 'Domain and hosting, paid third-party services and integrations, photo/video production, ad budget, and revisions beyond the agreed scope are billed separately.' },
+        { h: 'Cancellation', p: 'If the client cancels the project after work has started, the prepayment for work already completed is non-refundable. Refunds for uncompleted work are discussed individually.' },
+        { h: 'Final provisions', p: 'Any disputes are resolved through negotiation. Actual payment for services and the start of work constitute the client\'s agreement to these terms.' }
+      ]
+    }
+  },
+
+  hy: {
+    meta: {
+      homeTitle: 'Վլադիսլավ Աֆոնին — Afonin Web Studio',
+      siteName: 'Afonin Web Studio',
+      pricingAllTitle: 'Ծառայություններ և գներ',
+      pricingSuffix: ' — գներ'
+    },
+    common: {
+      skipServices: 'Անցնել ծառայություններին',
+      skipPricing: 'Անցնել գներին',
+      brandAria: 'Afonin Web Studio — գլխավոր',
+      backToHome: '← Գլխավոր էջ',
+      up: 'ՎԵՐև ↑',
+      github: 'GITHUB ↗',
+      copyright: '© 2026 AFONIN WEB STUDIO',
+      notFoundEyebrow: 'AFONIN WEB STUDIO · 404',
+      privacyLink: 'Գաղտնիության քաղաքականություն',
+      offerLink: 'Հրապարակային օֆերտա',
+      cookieText: 'Կայքն օգտագործում է cookie ֆայլեր վերլուծության և աշխատանքի բարելավման համար։ Շարունակելով օգտվել կայքից՝ դուք համաձայնում եք դրա հետ։',
+      cookieAccept: 'Լավ'
+    },
+    home: {
+      availability: 'ԲԱՑ ԵՄ ՆՈՐ ՆԱԽԱԳԾԵՐԻ ՀԱՄԱՐ',
+      portraitAlt: 'Վլադիսլավ Աֆոնին, Afonin Web Studio-ի հիմնադիր',
+      greeting: 'Բարև, ես եմ',
+      name: 'ՎԼԱԴԻՍԼԱՎ\nԱՖՈՆԻՆ',
+      role: 'ՎԵԲ ԾՐԱԳՐԱՎՈՐՈՂ\nԵՎ ՍՏՈՒԴԻԱՅԻ ՀԻՄՆԱԴԻՐ',
+      intro: 'Նախագծում, նկարում և ծրագրավորում եմ թվային լուծումներ բիզնեսի համար։ Առաջին գաղափարից մինչև գործարկում — դուք շփվում եք ուղիղ ինձ հետ։',
+      location: 'ՀԱՅԱՍՏԱՆ · ԱՇԽԱՏՈՒՄ ԵՄ ՕՆԼԱՅՆ',
+      heroNote: 'Վերածում եմ գաղափարները\nաշխատող\nթվային լուծումների։',
+      stats: [
+        { value: '5', unit: 'տարի', label: 'FULL-STACK\nԶԱՐԳԱՑՄԱՆ ՄԵՋ' },
+        { value: '1,5', unit: 'տարի', label: 'ԶԱՐԳԱՑՈՒՄ\nAI-Ի ՀԵՏ' },
+        { value: '12', unit: 'ամիս', label: 'ԵՐԱՇԽԻՔ\nԿՈԴԻ ՀԱՄԱՐ' }
+      ],
+      servicesTitle: 'ԹՎԱՅԻՆ ԼՈՒԾՈՒՄՆԵՐ',
+      fullPricing: 'ԱՄԲՈՂՋ ԳՆԱՑՈՒՑԱԿԸ',
+      services: [
+        { alt: 'Պատրաստի կայքեր՝ լենդինգ, ընկերության կայք, ինտերնետ-խանութ', title: 'ԿԱՅՔԵՐ ԲԱՆԱԼԻՈՎ', small: 'ԼԵՆԴԻՆԳՆԵՐ · ԸՆԿԵՐՈՒԹՅՈՒՆՆԵՐ · ԽԱՆՈՒԹՆԵՐ' },
+        { alt: 'Բոտեր, AI և ավտոմատացում բիզնեսի համար', title: 'ԲՈՏԵՐ ԵՎ AI', small: 'TELEGRAM · ԱՍԻՍՏԵՆՏՆԵՐ · ԻՆՏԵԳՐԱՑԻԱՆԵՐ' },
+        { alt: 'Վեբ-հավելվածներ՝ CRM, անձնական կաբինետներ, B2B-պորտալներ', title: 'ՎԵԲ-ՀԱՎԵԼՎԱԾՆԵՐ', small: 'CRM · ԱՆՁՆԱԿԱՆ ԿԱԲԻՆԵՏ · B2B' }
+      ],
+      aboutAria: 'Ստուդիայի և աշխատանքի գործընթացի մասին',
+      experienceTitle: 'ՓՈՐՁ ԵՎ ՏԵԽՆՈԼՈԳԻԱՆԵՐ',
+      aboutStudio: 'ՍՏՈՒԴԻԱՅԻ ՄԱՍԻՆ',
+      experienceRows: [
+        { title: 'Full-stack ծրագրավորում', desc: 'Ինտերֆեյսից մինչև տվյալների բազա', badge: '5 ՏԱՐԻ' },
+        { title: 'Զարգացում AI-ի հետ', desc: 'Ավելի շատ ժամանակ որակի և թեստերի համար', badge: '1,5 ՏԱՐԻ' },
+        { title: 'Համակարգային ադմինիստրում', desc: 'Ամեն նախագծի հուսալի հիմք', badge: '2 ՏԱՐԻ' }
+      ],
+      skillsTitle: 'ՏԵԽՆՈԼՈԳԻԱՆԵՐ ԵՎ ՄՈՏԵՑՈՒՄ',
+      skills: ['NEXT.JS', 'REACT', 'NODE.JS', 'ՏՎՅԱԼՆԵՐԻ ԲԱԶԱ', 'API', 'TELEGRAM', 'AI', 'SEO', 'ադապտիվ', 'HY · RU · EN'],
+      processTitle: 'ԻՆՉՊԵՍ ԵՆՔ ԱՇԽԱՏՈՒՄ',
+      steps: [
+        { title: 'ԾԱՆՈԹԱՆՈՒՄ ԵՆՔ', desc: 'Անվճար խորհրդատվություն։\nՔննարկում ենք նպատակներն ու խնդիրը։' },
+        { title: 'ՊԼԱՆԱՎՈՐՈՒՄ ԵՆՔ', desc: 'Բրիֆ, կառուցվածք, ժամկետներ և նախահաշիվ։\nՀաստատում ենք աշխատանքի ծավալը։' },
+        { title: 'ՆԱԽԱԳԾՈՒՄ ԵՆՔ', desc: 'Առաջին էկրանի մակետը՝ անվճար։\nՊայմանագիր և 50% նախավճար։' },
+        { title: 'ՄՇԱԿՈՒՄ ԵՆՔ', desc: 'Մաքուր կոդ, ադապտիվություն և ինտեգրացիաներ։\nԱրդյունք՝ ամեն 3–5 օրը մեկ։' },
+        { title: 'ԳՈՐԾԱՐԿՈՒՄ ԵՆՔ', desc: 'Թեստեր, ուսուցում և մուտքերի փոխանցում։\n12 ամիս երաշխիք կոդի համար։' }
+      ],
+      manifestoQuote: 'Դուք շփվում եք\nուղիղ\nծրագրավորողի հետ։\nԳաղափարից\nմինչև գործարկում։',
+      signature: 'Վլադիսլավ',
+      manifestoBottom: 'ՁԵՐ ԳԱՂԱՓԱՐԸ։\nԻՄ ԱՇԽԱՏԱՆՔԸ։\nՄԻԱՍՆԱԿԱՆ ԱՐԴՅՈՒՆՔ։',
+      contactTitle: 'ՔՆՆԱՐԿԵ՞ՆՔ\nՁԵՐ ՆԱԽԱԳԻԾԸ',
+      contactLead: 'Անվճար խորհրդատվություն և գլխավոր էկրանի մակետ՝ մինչև վճարումը։',
+      contactCta: 'ԳՐԵԼ TELEGRAM-ՈՒՄ',
+      emailAria: 'Գրել էլ. փոստին afoninwebstudio@gmail.com',
+      emailSmall: 'ԳՐԵԼ ԷԼ. ՓՈՍՏՈՎ',
+      whatsappAria: 'Գրել WhatsApp-ում +374 98 96 94 53 համարին',
+      whatsappSmall: 'ԳՐԵԼ WHATSAPP-ՈՒՄ',
+      callText: 'Զանգահարել՝ +374 98 96 94 53',
+      cityLine: 'Գյումրի · Երևան · օնլայն',
+      presentationAria: 'Ներբեռնել Afonin Web Studio-ի ծառայությունների պրեզենտացիան PDF ձևաչափով',
+      presentationAlt: 'Afonin Web Studio պրեզենտացիա — թվային լուծումներ բիզնեսի համար',
+      presentationText: 'ՆԵՐԲԵՌՆԵԼ ՊՐԵԶԵՆՏԱՑԻԱՆ · PDF'
+    },
+    notFound: {
+      title: 'Էջը չի գտնվել',
+      link: 'Անցնել ծառայություններին և գներին →',
+      home: 'Գլխավոր էջ'
+    },
+    pricing: {
+      notFoundTitle: 'Բաժինը չի գտնվել',
+      notFoundLink: 'Բոլոր ծառայությունները և գները →',
+      breadcrumbsAria: 'Ուղենիշներ',
+      home: 'Գլխավոր',
+      allServices: 'Ծառայություններ և գներ',
+      eyebrow: 'AFONIN WEB STUDIO · ԳՆԱՑՈՒՑԱԿ 2026',
+      heading: 'ԹՎԱՅԻՆ ԼՈՒԾՈՒՄՆԵՐ։',
+      headingAccent: 'ԹԱՓԱՆՑԻԿ ԳՆԵՐ։',
+      lead: 'Առաջին էկրանից մինչև սեփական վեբ-հավելված։\nԸնտրեք լուծումը — աշխատանքի կազմը, ժամկետները և արժեքը արդեն այստեղ են։',
+      downloadPresentation: 'Ներբեռնել պրեզենտացիան',
+      promises: ['Մակետ՝ մինչև վճարումը', 'Գինը ֆիքսվում է պայմանագրում', '12 ամիս երաշխիք', 'Բոլոր գները՝ ՀՀ դրամով · ֏'],
+      navAria: 'Գնացուցակի բաժիններ',
+      allServicesNav: 'Բոլոր ծառայությունները',
+      totalCount: '13',
+      supportLabel: 'Ամսական սպասարկում',
+      perMonth: ' /ամսվա',
+      supportCta: 'Քննարկել սպասարկումը',
+      supportNote: 'Նվազագույն ժամկետը՝ 3 ամիս։ Չօգտագործված ուղղումների ժամերը չեն փոխանցվում։',
+      includesTitle: 'Ներառված է արժեքի մեջ',
+      extrasTitle: 'Կարելի է ավելացնել',
+      needsTitle: 'Ինչ է անհրաժեշտ ձեզանից',
+      discussProject: 'Քննարկել նախագիծը',
+      termsEyebrow: 'ԹԱՓԱՆՑԻԿ ԵՎ ՊԱՅՄԱՆԱԳՐՈՎ',
+      termsTitle: 'Պայմաններ և երաշխիքներ',
+      terms: [
+        { title: 'Վճարում', text: '50% նախավճար, 50%՝ գործարկումից հետո։ 500 000 ֏-ից բարձր նախագծերը՝ երեք փուլով՝ 40 / 30 / 30։ Անկանխիկ վճարում ընկերության հաշվին։' },
+        { title: 'Երաշխիք', text: '12 ամսվա ընթացքում անվճար ուղղում ենք մեր կոդի սխալները, եթե երրորդ անձինք փոփոխություններ չեն կատարել դրանում։' },
+        { title: 'Ձեզանից անհրաժեշտ է', text: 'Տեքստեր և լուսանկարներ (կամ պատվեր մեզանից), դոմենի և սոցցանցերի մուտքեր, հաստատումների համար պատասխանատու մեկ անձ։' },
+        { title: 'Չի ներառվում արժեքի մեջ', text: 'Դոմեն և հոսթինգ, վճարովի ծառայություններ, լուսանկարահանում և տեսանկարահանում, գովազդային բյուջե, ներառվածից ավելի ուղղումներ։' }
+      ],
+      termsNote: 'Վերջնական արժեքը և ժամկետները ֆիքսվում են պայմանագրում՝ անվճար խորհրդատվությունից հետո։',
+      contactEyebrow: 'ՀԱՋՈՐԴ ՔԱՅԼԸ',
+      contactTitle: 'Քննարկե՞նք ձեր նախագիծը',
+      contactLead: 'Անվճար խորհրդատվություն և գլխավոր էկրանի մակետ՝ մինչև վճարումը։',
+      contactBonus: 'Բոնուս առաջին հաճախորդներին՝ +1 ամիս սպասարկում նվեր։',
+      writeTelegram: 'Գրել Telegram-ում',
+      writeWhatsapp: 'Գրել WhatsApp-ում',
+      writeEmail: 'Գրել էլ. փոստով',
+      backToStudio: '← Վերադառնալ ստուդիա',
+      upPrices: 'Դեպի գները ↑'
+    },
+    legal: {
+      updated: 'Թարմացվել է՝ 1 հունվարի, 2026',
+      privacyTitle: 'Գաղտնիության քաղաքականություն',
+      offerTitle: 'Հրապարակային օֆերտա',
+      privacy: [
+        { h: 'Ով է մշակում տվյալները', p: 'Կայքի օպերատորն է Վլադիսլավ Աֆոնինը՝ անհատ ձեռնարկատեր (Հայաստանի Հանրապետություն)։ Գաղտնիության հարցերով կապի համար՝ afoninwebstudio@gmail.com։' },
+        { h: 'Ինչ տվյալներ են հավաքվում', p: 'Կայքում չկան ձևեր, որոնք ավտոմատ կերպով ուղարկում են տվյալներ սերվեր։ Կապը տեղի է ունենում արտաքին ծառայությունների միջոցով՝ Telegram, WhatsApp, հեռախոս կամ էլ. փոստ, ձեր նախաձեռնությամբ, երբ դուք անցնում եք համապատասխան հղումով։ Մենք ստանում ենք միայն այն, ինչ դուք ինքներդ եք հաղորդում նամակագրության մեջ՝ անուն, կոնտակտ, նախագծի նկարագրություն։' },
+        { h: 'Cookie ֆայլեր և վերլուծություն', p: 'Կայքը կարող է օգտագործել վեբ-վերլուծության ծառայություններ (օրինակ՝ Google Analytics կամ Yandex Metrica) այցելությունների անանուն վիճակագրություն հավաքելու համար՝ սարքի տեսակ, բրաուզեր, անցման աղբյուր։ Այս տվյալները ուղղակիորեն չեն հնարավորեցնում նույնականացնել այցելուին։ Դուք կարող եք արգելափակել cookie-ները բրաուզերի կարգավորումներում՝ առանց ազդելու կայքի աշխատանքի վրա։' },
+        { h: 'Ինչպես են օգտագործվում տվյալները', p: 'Նամակագրության տվյալներն օգտագործվում են բացառապես ձեր նախագիծը քննարկելու և իրականացնելու համար։ Մենք չենք վաճառում կամ փոխանցում դրանք երրորդ անձանց, բացառությամբ օրենքով նախատեսված դեպքերի։' },
+        { h: 'Պահպանում և պաշտպանություն', p: 'Նամակագրությունը պահվում է համապատասխան մեսենջերներում և փոստային ծառայություններում (Telegram, WhatsApp, Gmail) և պաշտպանված է դրանց սեփական անվտանգության միջոցներով։ Նամակագրությանը մուտք ունի միայն Վլադիսլավ Աֆոնինը։' },
+        { h: 'Ձեր իրավունքները', p: 'Դուք կարող եք ցանկացած պահի պահանջել ձեր տվյալների ջնջումը մեր նամակագրությունից՝ գրելով afoninwebstudio@gmail.com հասցեին։' },
+        { h: 'Քաղաքականության փոփոխություններ', p: 'Քաղաքականության արդիական տարբերակը միշտ հասանելի է այս էջում։ Վերջին թարմացման ամսաթիվը նշված է փաստաթղթի սկզբում։' }
+      ],
+      offer: [
+        { h: 'Ընդհանուր դրույթներ', p: 'Սույն փաստաթուղթը Վլադիսլավ Աֆոնինի (այսուհետ՝ «Կատարող») հրապարակային օֆերտան է կայքերի, բոտերի, AI-լուծումների և վեբ-հավելվածների մշակման ծառայություններ մատուցելու վերաբերյալ։ Ծառայությունների վճարումը նշանակում է պատվիրատուի համաձայնությունը սույն օֆերտայի պայմանների հետ։' },
+        { h: 'Պայմանագրի առարկան', p: 'Կատարողը մատուցում է ծառայություններ՝ կողմերի կողմից նամակագրության մեջ համաձայնեցված և/կամ պայմանագրում ամրագրված ծավալով, «Ծառայություններ և գներ» բաժնի սակագների հիման վրա։' },
+        { h: 'Արժեքը և վճարումը', p: 'Ստանդարտ պայմաններ՝ 50% նախավճար, 50%՝ գործարկումից հետո։ 500 000 ֏-ից բարձր նախագծերի համար վճարումը կարող է բաժանվել երեք փուլի՝ 40% / 30% / 30%։ Վճարումն իրականացվում է անկանխիկ փոխանցմամբ։ Վերջնական արժեքը սահմանվում է անհատապես՝ անվճար խորհրդատվությունից հետո։' },
+        { h: 'Կատարման ժամկետներ', p: 'Մոտավոր ժամկետները նշված են գների բաժնում և կախված են աշխատանքի ծավալից։ Ժամկետները կարող են փոփոխվել, եթե պատվիրատուն ուշացնում է նյութերի (տեքստեր, լուսանկարներ, մուտքեր) տրամադրումը կամ փուլերի հաստատումը։' },
+        { h: 'Երաշխիք', p: 'Կատարողն անվճար ուղղում է իր սեփական կոդի սխալները գործարկումից հետո 12 ամսվա ընթացքում, եթե կոդում փոփոխություններ չեն կատարել երրորդ անձինք։' },
+        { h: 'Պատվիրատուի պարտականությունները', p: 'Պատվիրատուն տրամադրում է անհրաժեշտ նյութերն ու մուտքերը, նշանակում է հաստատումների համար պատասխանատու մեկ անձ և ժամանակին հետադարձ կապ է տալիս աշխատանքի փուլերի վերաբերյալ։' },
+        { h: 'Ինչը չի ներառվում արժեքի մեջ', p: 'Դոմենը և հոսթինգը, վճարովի երրորդ կողմի ծառայություններն ու ինտեգրումները, լուսանկարահանումն ու տեսանկարահանումը, գովազդային բյուջեն, ինչպես նաև համաձայնեցված ծավալից ավելի լրամշակումները վճարվում են առանձին։' },
+        { h: 'Ծառայություններից հրաժարում', p: 'Եթե պատվիրատուն հրաժարվում է նախագծից աշխատանքների սկսվելուց հետո, արդեն կատարված աշխատանքի նախավճարը չի վերադարձվում։ Չկատարված ծավալի վերադարձը քննարկվում է անհատապես։' },
+        { h: 'Եզրափակիչ դրույթներ', p: 'Բոլոր վիճելի հարցերը լուծվում են բանակցությունների միջոցով։ Ծառայությունների փաստացի վճարումը և աշխատանքի սկիզբը նշանակում են պատվիրատուի համաձայնությունը սույն օֆերտայի պայմանների հետ։' }
+      ]
+    }
+  }
+};

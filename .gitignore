@@ -1,0 +1,6 @@
+research/
+.sites-runtime/
+*.tar.gz
+*.log
+node_modules/
+dist/
