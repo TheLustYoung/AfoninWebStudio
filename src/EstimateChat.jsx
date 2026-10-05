@@ -28,6 +28,7 @@ export default function EstimateChat() {
   const [lead, setLead] = useState({ name: '', contact: '', hp: '' });
   const [leadState, setLeadState] = useState('idle'); // idle | sending | sent | fallback
   const [error, setError] = useState('');
+  const [leadId, setLeadId] = useState('');
   const bodyRef = useRef(null);
 
   useEffect(() => {
@@ -94,6 +95,8 @@ export default function EstimateChat() {
         body: JSON.stringify({ ...lead, answers, notes, lang, page: location.pathname }),
       });
       if (r.ok) {
+        const done = await r.json().catch(() => ({}));
+        setLeadId(done.id || '');
         setLeadState('sent');
         setShowLead(false);
         return;
@@ -252,7 +255,7 @@ export default function EstimateChat() {
                   <small className="ec-note">{t.disclaimer}</small>
                 </div>
 
-                {leadState === 'sent' && <p className="ec-ok">{t.sent}</p>}
+                {leadState === 'sent' && <p className="ec-ok">{t.sent}{leadId ? ` (${leadId})` : ''}</p>}
                 {leadState === 'fallback' && (
                   <div className="ec-fallback">
                     <b>{t.fallbackTitle}</b>
