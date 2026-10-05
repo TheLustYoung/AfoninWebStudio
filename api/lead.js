@@ -1,24 +1,14 @@
-// POST /api/lead  { name, contact, messages, estimate, lang, page, hp }  ->  sends the request to the owner's Telegram.
+// POST /api/lead  { name, contact, answers, notes, lang, page, hp }  ->  sends the request to the owner's Telegram.
+// The price is recalculated here from `answers` with the same rules as in the browser, so the client cannot send a made-up estimate.
 import { limited, readJson, send } from './_lib/http.js';
-import { cleanMessages, cleanEstimate } from './estimate.js';
+import { calc, cleanAnswers, summaryRu } from '../src/estimate-engine.js';
 
-const fmt = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
 const clip = (v, n) => String(v ?? '').replace(/\s+/g, ' ').trim().slice(0, n);
 
-export function buildText({ name, contact, messages, estimate, lang, page }) {
-  const lines = ['🆕 Заявка с сайта (калькулятор)', `👤 ${name}`, `📞 ${contact}`, `🌐 Язык: ${lang} · ${page || '/'}`];
-  if (estimate) {
-    lines.push('', `💰 Оценка ИИ: ${fmt(estimate.min)} – ${fmt(estimate.max)} ֏, ${estimate.duration}`, `📌 ${estimate.summary}`);
-    for (const i of estimate.items) lines.push(`• ${i.name}: ${i.price}`);
-    if (estimate.assumptions.length) lines.push('Допущения: ' + estimate.assumptions.join('; '));
-  } else {
-    lines.push('', '💰 Оценки ИИ нет (клиент оставил заявку без неё)');
-  }
-  const said = (messages || []).filter((x) => x.role === 'user').slice(-4);
-  if (said.length) {
-    lines.push('', '💬 Что писал клиент:');
-    for (const m of said) lines.push('— ' + clip(m.content, 500));
-  }
+export function buildText({ name, contact, answers, notes, lang, page }) {
+  const result = calc(answers);
+  const lines = ['🆕 Заявка с сайта (калькулятор)', `👤 ${name}`, `📞 ${contact}`, `🌐 Язык сайта: ${lang} · ${page || '/'}`, ''];
+  lines.push(result ? summaryRu(answers, result, notes) : `Описание клиента: ${notes || '—'}`);
   const text = lines.join('\n');
   return text.length > 3900 ? text.slice(0, 3890) + '…' : text;
 }
@@ -41,14 +31,11 @@ export default async function handler(req, res) {
   const contact = clip(body.contact, 120);
   if (name.length < 2 || contact.length < 5) return send(res, 400, { error: 'bad_contact' });
 
-  const userMessages = (Array.isArray(body.messages) ? body.messages : [])
-    .filter((m) => m && m.role === 'user' && typeof m.content === 'string')
-    .map((m) => ({ role: 'user', content: m.content.slice(0, 2000) }));
   const text = buildText({
     name,
     contact,
-    messages: userMessages,
-    estimate: cleanEstimate(body.estimate),
+    answers: cleanAnswers(body.answers),
+    notes: clip(body.notes, 800),
     lang: clip(body.lang, 4) || 'ru',
     page: clip(body.page, 80),
   });
