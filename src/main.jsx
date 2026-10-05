@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { Suspense, lazy, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from './Home';
@@ -6,6 +6,7 @@ import Pricing from './Pricing';
 import Legal from './Legal';
 import { LanguageProvider, useT } from './i18n';
 import { CookieBanner } from './i18n/CookieBanner';
+const EstimateChat = lazy(() => import('./EstimateChat'));
 import '@fontsource/marck-script/400.css';
 import './styles.css';
 import './pricing.css';
@@ -28,7 +29,7 @@ export function NotFound() {
   const t = useT();
   return <main className="missing-page"><p className="eyebrow">{t.common.notFoundEyebrow}</p><h1>{t.notFound.title}</h1><Link className="price-button" to="/pricing">{t.notFound.link}</Link><Link to="/">{t.notFound.home}</Link></main>;
 }
-createRoot(document.getElementById('root')).render(<React.StrictMode><LanguageProvider><BrowserRouter><RoutePosition /><Routes><Route path="/" element={<Home />} /><Route path="/pricing" element={<Pricing />} /><Route path="/pricing/:category" element={<Pricing />} /><Route path="/privacy" element={<Legal page="privacy" />} /><Route path="/offer" element={<Legal page="offer" />} /><Route path="*" element={<NotFound />} /></Routes><CookieBanner /><PreloaderGate /></BrowserRouter></LanguageProvider></React.StrictMode>);
+createRoot(document.getElementById('root')).render(<React.StrictMode><LanguageProvider><BrowserRouter><RoutePosition /><Routes><Route path="/" element={<Home />} /><Route path="/pricing" element={<Pricing />} /><Route path="/pricing/:category" element={<Pricing />} /><Route path="/privacy" element={<Legal page="privacy" />} /><Route path="/offer" element={<Legal page="offer" />} /><Route path="*" element={<NotFound />} /></Routes><CookieBanner /><Suspense fallback={null}><EstimateChat /></Suspense><PreloaderGate /></BrowserRouter></LanguageProvider></React.StrictMode>);
 
 function imageLoaded(img) {
   if (img.complete) return Promise.resolve();
