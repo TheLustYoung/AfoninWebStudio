@@ -34,7 +34,7 @@ export default function EstimateChat() {
     listRef.current?.scrollTo({ top: listRef.current.scrollHeight, behavior: 'smooth' });
   }, [messages, busy, estimate, showLead, leadState, error]);
 
-  const failText = (code, fallback) => (code === 'not_configured' ? t.unavailable : code === 'rate' ? t.rate : fallback);
+  const failText = (code, fallback, status) => (code === 'not_configured' ? t.unavailable : code === 'rate' ? t.rate : `${fallback} (${code || status})`);
 
   async function ask(content) {
     const value = content.trim();
@@ -52,7 +52,7 @@ export default function EstimateChat() {
       });
       const data = await r.json().catch(() => ({}));
       if (!r.ok) {
-        setError(failText(data.error, t.errChat));
+        setError(failText(data.error, t.errChat, r.status));
       } else {
         setMessages([...next, { role: 'assistant', content: data.reply }]);
         if (data.estimate) setEstimate(data.estimate);
@@ -81,7 +81,7 @@ export default function EstimateChat() {
       const data = await r.json().catch(() => ({}));
       if (!r.ok) {
         setLeadState('idle');
-        setError(failText(data.error, t.errSend));
+        setError(failText(data.error, t.errSend, r.status));
         return;
       }
       setLeadState('sent');
