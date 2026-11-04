@@ -1,5 +1,10 @@
 {
-  "rewrites": [
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/pricing", "destination": "/services", "permanent": true },
+    { "source": "/pricing/:category", "destination": "/services/:category", "permanent": true }
   ]
 }

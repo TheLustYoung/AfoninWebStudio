@@ -11,23 +11,19 @@ export function Nl({ text }) {
   ));
 }
 
-export function LanguageSwitcher({ lang, setLang }) {
-  const options = [
-    { code: 'ru', label: 'RU' },
-    { code: 'en', label: 'EN' },
-    { code: 'hy', label: 'HY' }
-  ];
+export function LanguageSwitcher({ lang, languages, setLang }) {
   return (
     <div className="lang-switch" role="group" aria-label="Language / Язык / Լեզու">
-      {options.map(opt => (
+      {languages.map(code => (
         <button
-          key={opt.code}
+          key={code}
           type="button"
-          className={'lang-switch-btn' + (lang === opt.code ? ' active' : '')}
-          onClick={() => setLang(opt.code)}
-          aria-pressed={lang === opt.code}
+          lang={code}
+          className={'lang-switch-btn' + (lang === code ? ' active' : '')}
+          onClick={() => setLang(code)}
+          aria-pressed={lang === code}
         >
-          {opt.label}
+          {code.toUpperCase()}
         </button>
       ))}
     </div>
