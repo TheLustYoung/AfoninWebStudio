@@ -59,10 +59,10 @@ async function sendToAdmin({ url, key, lead }) {
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return send(res, 405, { error: 'method' });
-  const token = process.env.TELEGRAM_BOT_TOKEN;
-  const chat = process.env.TELEGRAM_CHAT_ID; // a group id looks like -1001234567890
-  const adminUrl = process.env.ADMIN_LEADS_URL;
-  const adminKey = process.env.ADMIN_LEADS_KEY;
+  const token = process.env.TELEGRAM_BOT_TOKEN?.trim();
+  const chat = process.env.TELEGRAM_CHAT_ID?.trim(); // a personal id is a plain number, a group id looks like -1001234567890
+  const adminUrl = process.env.ADMIN_LEADS_URL?.trim();
+  const adminKey = process.env.ADMIN_LEADS_KEY?.trim();
   const toTelegram = !!(token && chat);
   const toAdmin = !!(adminUrl && adminKey);
   if (!toTelegram && !toAdmin) return send(res, 503, { error: 'not_configured' });

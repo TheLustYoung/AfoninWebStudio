@@ -11,7 +11,7 @@ export const legal = {
       },
       {
         "h": "Какие данные собираются",
-        "p": "Когда вы отправляете форму заявки, сайт получает то, что вы указали: имя, контакт, тип задачи и описание, а также язык и адрес страницы. Заявка пересылается в закрытую рабочую группу Telegram и сохраняется в закрытой базе клиентов студии. Связаться можно и напрямую через Telegram, WhatsApp, телефон или email: тогда мы получаем только то, что вы сообщаете в переписке."
+        "p": "Когда вы отправляете форму заявки, сайт получает то, что вы указали: имя, контакт, тип задачи и описание, а также язык и адрес страницы. Заявка приходит студии в закрытый чат Telegram и сохраняется в закрытой базе клиентов студии. Связаться можно и напрямую через Telegram, WhatsApp, телефон или email: тогда мы получаем только то, что вы сообщаете в переписке."
       },
       {
         "h": "Файлы cookie и аналитика",
@@ -84,7 +84,7 @@ export const legal = {
       },
       {
         "h": "What data is collected",
-        "p": "When you send the request form, the site receives what you enter: your name, contact, task type and description, along with the page language and address. The request is forwarded to a private Telegram work group and saved in the studio's private client database. You can also contact us directly through Telegram, WhatsApp, phone or email; then we only receive what you share in the conversation."
+        "p": "When you send the request form, the site receives what you enter: your name, contact, task type and description, along with the page language and address. The request is sent to the studio's private Telegram chat and saved in the studio's private client database. You can also contact us directly through Telegram, WhatsApp, phone or email; then we only receive what you share in the conversation."
       },
       {
         "h": "Cookies and analytics",
@@ -157,7 +157,7 @@ export const legal = {
       },
       {
         "h": "Ինչ տվյալներ են հավաքվում",
-        "p": "Երբ ուղարկում եք հայտի ձևը, կայքը ստանում է այն, ինչ նշել եք՝ անուն, կոնտակտ, խնդրի տեսակ և նկարագրություն, ինչպես նաև էջի լեզուն և հասցեն։ Հայտը փոխանցվում է Telegram-ի փակ աշխատանքային խմբին և պահպանվում է ստուդիայի հաճախորդների փակ բազայում։ Կարող եք կապվել նաև ուղղակիորեն Telegram-ով, WhatsApp-ով, հեռախոսով կամ էլ. փոստով. այդ դեպքում ստանում ենք միայն այն, ինչ հաղորդում եք նամակագրության մեջ։"
+        "p": "Երբ ուղարկում եք հայտի ձևը, կայքը ստանում է այն, ինչ նշել եք՝ անուն, կոնտակտ, խնդրի տեսակ և նկարագրություն, ինչպես նաև էջի լեզուն և հասցեն։ Հայտը փոխանցվում է ստուդիայի փակ Telegram զրույցին և պահպանվում է ստուդիայի հաճախորդների փակ բազայում։ Կարող եք կապվել նաև ուղղակիորեն Telegram-ով, WhatsApp-ով, հեռախոսով կամ էլ. փոստով. այդ դեպքում ստանում ենք միայն այն, ինչ հաղորդում եք նամակագրության մեջ։"
       },
       {
         "h": "Cookie ֆայլեր և վերլուծություն",
